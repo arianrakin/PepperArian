@@ -1,0 +1,18 @@
+topic: ~top_bib()
+
+proposal:%BIB
+
+Du kannst deine Frage zur Bibliothek gerne stellen, ich höre zu
+u1: (["Wo ist die Bibliothek?" "Wie komme ich zur Bibliothek?" "Wo finde ich die Bibliothek?"])
+ %SHOW_BIB Auf meinem Bildschirm ist der Lageplan vom Campus angezeigt, danach kannst du dich orientieren.
+ Möchtest Du die Öffnungszeiten wissen?
+    u2:(Ja) %HIDE_BIB  Auf meinem Bildschirm siehst du die Öffnungszeiten %SHOWTIME_BIB da siehst du die Öffnungszeiten.
+    Wenn du fertig bist, drück einfach den Zrück Button
+    u2:(Nein) %HIDE_BIB Ok, dann bringe ich dich zurück zur Startseite ^endDiscuss(userWish)
+
+u1: (["Wie lange hat die Bibliothek noch auf?" "Wann macht die Bibliothek auf?" "Wann macht die Bibliothek zu?"
+"Hat die Bibliothek gerade auf?"])
+ %SHOWTIME_BIB Auf meinem Bildschirm siehst du die Öffnungszeiten. Möchtest du wissen, wo du die Biblothek findest?
+    u2:(Ja) %HIDETIME_BIB  Auf meinem Bildschirm ist der Lageplan angezeigt %SHOW_BIB danach kannst du dich orientieren.
+    Wenn du fertig bist, drück einfach den Zurück Button
+    u2:(Nein) %HIDE_BIB Ok, dann bringe ich dich zurück zur Startseite ^endDiscuss(userWish)

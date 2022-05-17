@@ -1,0 +1,8 @@
+topic: ~top_fragen_nach_start()
+
+proposal:%vier
+u:(["Guten Morgen" "Hallo" "Guten Abend" "Guten Tag" "Hi"]) "Hallo, ich bin Pepper. Wie kann ich dir helfen?"
+ u1:(["Ich habe eine Frage zur Bibliothek" "Bibliothek" "Bib"]) ^topic(topic_two)
+ u1: (["Ich habe eine Frage zur Mensa" "Mensa"]) ^topic(topic3)
+ u1: (["Ich habe eine Frage zum Studienbüro" "Studienbüro"]) ^topic(topic4)
+ u1: (Ich habe eine allgemeine Frage) ^topic(topic5)

@@ -1,0 +1,22 @@
+topic: ~topic_mensa()
+
+
+proposal:%MENSA
+Du kannst deine Frage zur Mensa gerne stellen, ich höre zu
+u1: (["Wo ist die Mensa?" "Wie komme ich zur Mensa?" "Wo finde ich die Mensa?"])
+ %SHOW_MENSA Auf meinem Bildschirm ist der Lageplan vom Campus angezeigt, danach kannst du dich orientieren.
+ Möchtest Du wissen, was es heute gibt?
+    u2:(Ja) %HIDE_MENSA  Auf meinem Bildschirm ist der Mensaplan angezeigt
+    %SHOWFOOD_MENSA da siehst du, was es heute leckeres gibt. Wenn du fertig bist, drück einfach den Zrück Button
+    u2:(Nein) %HIDE_MENSA Ok, dann bringe ich dich zurück zur Startseite ^endDiscuss(userWish)
+
+u1: (["Was gibt es heute in der Mensa" "Was gibt es heute zu essen" ])
+ %SHOWFOOD_MENSA Auf meinem Bildschirm ist der Mensaplan angezeigt, da siehst du, was es heute leckeres gibt.
+ Möchtest du wissen, wo du die Mensa findest?
+    u2:(Ja) %HIDEFOOD_MENSA  Auf meinem Bildschirm ist der Lageplan angezeigt
+    %SHOW_MENSA danach kannst du dich orientieren. Wenn du fertig bist, drück einfach den Zurück Button
+    u2:(Nein) %HIDE_MENSA Ok, dann bringe ich dich zurück zur Startseite ^endDiscuss(userWish)
+
+
+
+

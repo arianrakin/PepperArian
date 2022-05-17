@@ -1,0 +1,18 @@
+topic: ~top_studienbuero()
+
+proposal:%STB
+
+Du kannst deine Frage zur Bibliothek gerne stellen, ich höre zu
+u1: (["Wo ist das Studienbüro?" "Wo finde ich das Studienbüro"])
+ %SHOW_STD Auf meinem Bildschirm ist der Lageplan vom Campus angezeigt, danach kannst du dich orientieren.
+ Möchtest Du die Öffnungszeiten wissen?
+    u2:(Ja) %HIDE_STD  Auf meinem Bildschirm siehst du die Öffnungszeiten
+    %SHOWTIME_STD da siehst du die Öffnungszeiten. Wenn du fertig bist, drück einfach den Zrück Button
+    u2:(Nein) %HIDE_STD Ok, dann bringe ich dich zurück zur Startseite ^endDiscuss(userWish)
+
+u1: (["Wie lange hat das Studienbüro noch auf?" "Wann macht das Studienbüro auf?" "Wann macht das Studienbüro zu?"
+"Hat das Studienbüro gerade auf?"])
+ %SHOWTIME_STD Auf meinem Bildschirm siehst du die Öffnungszeiten. Möchtest du wissen, wo du das Studienbüro findest?
+    u2:(Ja) %HIDETIME_STD  Auf meinem Bildschirm ist der Lageplan angezeigt
+    %SHOW_STD danach kannst du dich orientieren. Wenn du fertig bist, drück einfach den Zurück Button
+    u2:(Nein) %HIDE_STD Ok, dann bringe ich dich zurück zur Startseite ^endDiscuss(userWish)

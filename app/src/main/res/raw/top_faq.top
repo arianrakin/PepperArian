@@ -1,0 +1,11 @@
+topic: ~top_faq()
+
+proposal:%FAQ
+Du kannst deine Frage gerne stellen, ich höre zu
+
+u1: (["Wo sind die Toiletten?"  "Wo finde ich die Toiletten?"])
+%SHOW_TOI Auf meinem Bildschirm ist der Lageplan vom Campus angezeigt, danach kannst du dich orientieren
+u1: (["Wo ist das International Office?"])
+%SHOW_INTER Auf meinem Bildschirm ist der Lageplan vom Campus angezeigt, danach kannst du dich orientieren
+u1: (["Wo kann ich meine Multica validieren?"])
+%SHOW_MULTI Auf meinem Bildschirm ist der Lageplan vom Campus angezeigt, danach kannst du dich orientieren
